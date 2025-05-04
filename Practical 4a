@@ -1,0 +1,241 @@
+
+4a. Create a simple Mobile Website using jQuery Mobile.
+
+
+1) open index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home  Yogesh Arts</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Yogesh Arts</h1>
+        </div>
+
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a href="index.html" class="ui-button-active">Home</a></li>
+                <li><a href="about_us.html" >About Us</a></li>
+                <li><a href="products.html" >Products</a></li>
+                <li><a href="login_register.html" >Login/Register</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->
+
+
+
+      <center><h1>Products</h1></center>
+
+      <div class="content">
+        <center>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+                <img src="penguin.jpeg" height="250px" width="250px">
+            </div>
+        </div>
+        <br>
+
+        </center>
+      </div>
+
+     <div data-role="footer " data-theme="b">
+        <center>
+        <div class="quicklinks">
+            <h3>Quicklinks</h3>
+                <a href="index.html">Home</a><br><br>
+                <li><a href="about_us.html" >About Us</a></li><br><br>
+                <li><a href="products.html" >Products</a></li><br><br>
+                <li><a href="login_register.html" >Login/Register</a></li><br><br>
+        </div>
+
+        <p>Copyright 2022 | Yogesh Arts, All rights Reserved.</p>
+        </center>
+     </div>
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+2)open loginregister.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register | Yogesh Arts</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Yogesh Arts</h1>
+        </div>
+
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about_us.html" >About Us</a></li>
+                <li><a href="products.html" >Products</a></li>
+                <li><a href="login_register.html" class="ui-button-active">Login/Register</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->
+
+
+        <div class="content">
+         <div>
+            <center><h2>Register</h2></center>
+        </div>
+      <div data-role="content">
+        <label>Full Name:</label>
+        <input type="text"><br>
+
+        <label>Address:</label>
+        <textarea>cols="25" rows="7"></textarea> <br>
+ 
+        <label>Pincode:</label>
+        <input type="text"><br>
+
+        <label>Date of birth:</label>
+        <input type="date"><br>
+
+        <label>Email-ID:</label>
+        <input type="email"><br>
+
+        <label>Password:</label>
+        <input type="password"><br>
+
+        <label> confirm Password:</label>
+        <input type="password"><br>
+        
+     
+        <input type="submit" value="Register"><br>
+
+        <center> 
+            <a href="login.html">Already Registrered login</a></center>
+
+
+
+</div>
+
+</div>
+
+
+<div data-role="footer " data-theme="b">
+    <center>
+    <div class="quicklinks">
+        <h3>Quicklinks</h3>
+            <a href="index.html">Home</a><br><br>
+            <li><a href="about_us.html" >About Us</a></li><br><br>
+            <li><a href="products.html" >Products</a></li><br><br>
+            <li><a href="login_register.html" >Login/Register</a></li><br><br>
+    </div>
+
+    <p>Copyright 2022 | Yogesh Arts, All rights Reserved.</p>
+    </center>
+ </div>
+
+
+
+
+
+
+
+
+
+
+ </div>
+ <body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
