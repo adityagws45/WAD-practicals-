@@ -1,0 +1,27 @@
+. Create a Node.JS Application which serves a static website. 
+
+1)npm init 
+give description:this is wad
+
+(package.json file is created)
+
+
+2)index.js
+const express = require('express');
+const app =express();
+
+
+app.use(express.static('public'))
+
+app.listen(4000,()=>{
+    console.log("sever is started");
+})
+
+3) in terminal -> npm install express --save  
+(nodemodules created)
+
+4) create public folder
+inside public create index.html
+and paste the code of prac 1
+
+5)nodemon index.js
