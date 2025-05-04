@@ -1,0 +1,132 @@
+
+
+2c. Create an Angular application which will do following actions: Register 
+User, Login User, Show User Data on Profile Component 
+
+
+1) open in terminal  First check version 
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/prac456 (main)
+$ npm --version
+11.3.0
+
+2)install angular In terminal
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/prac456 (main)
+$ npm install -g @angular/cli@latest
+
+changed 274 packages in 1m
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+3)create new project  in terminal
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/prac12345 (main)
+$ ng new part
+✔ Which stylesheet format would you like to use? CSS
+   [ https://developer.mozilla.org/docs/Web/CSS
+      ]
+✔ Do you want to enable Server-Side Rendering (SSR) and Static
+ Site Generation (SSG/Prerendering)? Yes
+✔ Would you like to use the Server Routing and App Engine APIs
+ (Developer Preview) for this server application? Yes
+CREATE part/angular.json (2838 bytes)
+CREATE part/package.json (1222 bytes)
+CREATE part/README.md (1527 bytes)
+CREATE part/tsconfig.json (942 bytes)
+CREATE part/.editorconfig (331 bytes)
+
+
+4) till it get install let write code open the project name part inside it there will be src inside it will be app inside app there will be app.components.ts ,appcomp.css,appcomp.html
+
+
+5)open appcomponent.html then copy this code 
+
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter your name " name ="Name"><br>
+<input type="text" #address placeholder="Enter your adress " name ="address"><br>
+<input type="text" #contact placeholder="Enter your contact " name ="contact"><br>
+<input type="email" #email placeholder="Enter your name " name ="email"><br>
+
+<input type="password " #password  placeholder="Enter your password " name ="password "><br>
+
+<button (click)="getValue(name.value, address.value,contact.value,email.value)">Register</button>
+
+<h1>Your registered data </h1>
+
+<p>Name:{{displayname}}</p>
+<p>Address:{{displayaddress}}</p>
+<p>Contact:{{displaycontact}}</p>
+<p>Email:{{displayemail}}</p>
+
+
+6)open app.component.ts then copy this code 
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = "Registration Form";
+
+  displayname='';
+  displayaddress='';
+  displaycontact='';
+  displayemail='';
+
+getValue(name:string,address:string,contact:string,email:string){
+  this.displayname=name;
+  this.displayaddress=address;
+  this.displaycontact=contact;
+  this.displayemail=email;
+}
+}
+
+
+
+7) in app.compoennt.css
+
+input{
+    width:400px;
+    height:25px;
+    margin : 10px;
+    padding :5px;
+}
+
+
+8) open terminal and type  ng serve (first go to the file path and type)
+
+if u face problem here
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+
+remove 3rd and 4th line 
+
+
+if u did not see anuy problem then server will start 
+
+
+
+
+
+
+
+
+
+
+
+
+
