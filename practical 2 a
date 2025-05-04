@@ -1,2 +1,85 @@
 2A. Create version control account on GitHub and using Git commands to create 
 repository and push your code to GitHub. 
+
+
+1) make directory first  mkdir Part-c
+2)go into that directory cd Part-c
+3)check version  $ git --version
+git version 2.47.1.windows.1
+4) go to your GitHub account
+create repositiory make it public u can add description to it 
+5)go to vs code create new file inside part-c as file1.txt
+6)write something in it for eg 
+Name:Aditya Gawas
+Class:TE
+Subject:LP_II
+7)do git init in the terminal
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (main)$ git init
+Initialized empty Git repository in C:/Users/DELL/Desktop/hero1234/Part-c/.git/
+
+8)do git add . to add all files 
+
+9)do git status to check the status of the files 
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (master)
+$ git add .
+
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+10) copy the url from the GitHub repo 
+
+11) do git commit also include message if u want
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (master)
+$ git remote add origin https://github.com/adityagws45/WAD_PRACTICALSS.git
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (master)
+$ git commit -m "this is my commit"
+[master (root-commit) ef861eb] this is my commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file1.txt
+
+12)chec status 
+)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+13)copy the remaining two commands  from the GitHub 
+
+ELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (master)
+$ git branch -M main
+
+DELL@DESKTOP-KQ2O39O MINGW64 ~/Desktop/hero1234/Part-c (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 255 bytes | 255.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/adityagws45/WAD_PRACTICALSS.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+
+
+
+
+after git commit -m "any message"
+if promoted to authenticate the user type following commands;
+git config --global user.email "your GitHub email id"
+git config --global user.name "your GitHub user name"
+
+
+then rrest 
+git push -u origin master
