@@ -206,6 +206,8 @@ button.delete-btn:hover {
   background-color: #b71c1c;
 }
 
+#windows
+
 How to do
 - Open register.html in browser.
 
@@ -214,3 +216,98 @@ How to do
 - User data is stored in local storage.
 
 - Page redirects to list.html and shows registered users.
+
+
+
+#Ubuntu
+
+
+
+✅ Step-by-Step Guide to Run the Code on Ubuntu
+🔧 1. Create a Project Directory
+Open Terminal and create a new folder to hold your files:
+
+bash
+Copy
+Edit
+mkdir user-registration-app
+cd user-registration-app
+
+📁 2. Create the Required Files
+You need to create four files:
+
+register.html
+
+list.html
+
+register.js
+
+style.css
+
+Use any text editor to create and paste your code (e.g., gedit, nano, or VS Code).
+
+Example using gedit (or replace with your preferred editor):
+bash
+Copy
+Edit
+gedit register.html
+Paste the register.html code and save.
+
+Repeat for the other files:
+
+bash
+Copy
+Edit
+gedit list.html
+gedit register.js
+gedit style.css
+Paste the respective code and save.
+
+🧪 3. Install a Simple Local Web Server
+You need a local server to correctly load localStorage and handle relative links like register.js.
+
+Option A: Using Python's Simple HTTP Server
+Python is usually preinstalled on Ubuntu.
+
+For Python 3:
+
+bash
+Copy
+Edit
+python3 -m http.server 8000
+For Python 2:
+
+bash
+Copy
+Edit
+python -m SimpleHTTPServer 8000
+This will start a server at http://localhost:8000
+
+🌐 4. Open the Project in Browser
+Now, open your browser and go to:
+
+bash
+Copy
+Edit
+http://localhost:8000/register.html
+You should see the registration form.
+
+📝 5. Test the Functionality
+Fill in the form completely.
+
+Click Register.
+
+The data is stored in localStorage, and you're redirected to list.html.
+
+You’ll see the list of registered users displayed.
+
+Try deleting a user to test delete functionality.
+
+🐞 Optional: Debugging Tips
+Open browser dev tools (F12) → Console tab to check for any errors.
+
+Refresh list.html to confirm the data persists (since it uses localStorage).
+
+AJAX POST is simulated and goes to https://jsonplaceholder.typicode.com/posts — it won’t actually save anything but acts like a working API.
+
+
