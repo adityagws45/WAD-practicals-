@@ -99,6 +99,7 @@ input{
     padding :5px;
 }
 
+#Window
 
 8) open terminal and type  ng serve (first go to the file path and type)
 
