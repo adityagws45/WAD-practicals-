@@ -109,7 +109,7 @@ Bootstrap.
 </body>
 </html>
 
-
+#windows
 
 
 steps :copy the cdn link then search for bootstrap registraton form  copy the code of registration form.  
@@ -117,5 +117,56 @@ steps :copy the cdn link then search for bootstrap registraton form  copy the co
       :make column -12 which was previously 6
       :<div class="d-flex justify-content-center"> edit this for signup button 
       :Gender : male female and other changes are made via chatgpt 
+
+#ubntu
+
+
+
+
+
+
+
+ Step-by-Step Guide
+Step 1: Open Terminal
+Press Ctrl + Alt + T to open the terminal on your Ubuntu system.
+
+Step 2: Create a Directory (Optional)
+You can create a folder to organize your project:
+
+bash
+Copy
+Edit
+mkdir dashboard_project
+cd dashboard_project
+Step 3: Create and Open the HTML File Using gedit
+Run the following command to open the text editor:
+
+bash
+Copy
+Edit
+gedit index.html
+This will open gedit, the default GUI text editor in Ubuntu, with a new file named index.html.
+
+Step 4: Paste Your HTML Code
+In the gedit window that opens, paste your entire HTML code (including the <!DOCTYPE html> line).
+
+Save the file: Ctrl + S
+
+Close gedit: Ctrl + Q or click the close button.
+
+Step 5: Open HTML File in Browser
+Back in the terminal, type:
+
+bash
+Copy
+Edit
+xdg-open index.html
+This command opens the HTML file in your default web browser (e.g., Firefox or Chrome).
+
+
+
+
+
+
 
       
