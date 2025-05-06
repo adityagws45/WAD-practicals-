@@ -141,9 +141,6 @@ cd dashboard_project
 Step 3: Create and Open the HTML File Using gedit
 Run the following command to open the text editor:
 
-bash
-Copy
-Edit
 gedit index.html
 This will open gedit, the default GUI text editor in Ubuntu, with a new file named index.html.
 
