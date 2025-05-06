@@ -89,9 +89,138 @@ git push -u origin master
 
 
 
+#steps for ubuntu
 
+✅ Objective:
+Create a GitHub account, set up Git on Ubuntu, create a local repository, add a file, and push the code to your GitHub repository.
 
+🔧 Pre-requisites:
+You must have a GitHub account (https://github.com)
 
+Git should be installed on your Ubuntu system.
+
+🔁 Steps to Follow on Ubuntu
+Step 1: Install Git (if not already installed)
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install git
+Step 2: Check Git Version
+bash
+Copy
+Edit
+git --version
+✅ Output will be something like: git version 2.34.1
+
+Step 3: Create a Working Directory
+bash
+Copy
+Edit
+mkdir Part-c
+cd Part-c
+Step 4: Create a File
+You can use any text editor. Let’s use nano:
+
+bash
+Copy
+Edit
+nano file1.txt
+➡️ Type the following content:
+
+makefile
+Copy
+Edit
+Name: Aditya Gawas
+Class: TE
+Subject: LP_II
+Then press CTRL + O to save, and CTRL + X to exit.
+
+Step 5: Initialize Git
+bash
+Copy
+Edit
+git init
+✅ Output: Initialized empty Git repository in /home/yourusername/Part-c/.git/
+
+Step 6: Add File to Git
+bash
+Copy
+Edit
+git add .
+Step 7: Check Git Status
+bash
+Copy
+Edit
+git status
+✅ You should see new file: file1.txt
+
+Step 8: Commit the File
+bash
+Copy
+Edit
+git commit -m "Initial commit with file1.txt"
+Step 9: Create a Repository on GitHub
+Go to https://github.com
+
+Click on New Repository
+
+Name it: WAD_PRACTICALSS (or any name you want)
+
+Keep it Public
+
+Do NOT initialize with a README (important if pushing an existing repo)
+
+Click Create Repository
+
+Step 10: Add Remote URL
+bash
+Copy
+Edit
+git remote add origin https://github.com/your-username/WAD_PRACTICALSS.git
+➡️ Replace your-username with your GitHub username.
+
+Step 11: Rename the Branch to main
+bash
+Copy
+Edit
+git branch -M main
+Step 12: Push to GitHub
+bash
+Copy
+Edit
+git push -u origin main
+📌 If you’re prompted for your GitHub login, do the following:
+
+Use GitHub Personal Access Token (PAT) instead of password. [Since August 2021, passwords are no longer accepted.]
+
+Step 13 (Optional): Configure Git User Info (if prompted)
+If Git asks for user info or errors about identity, set it up:
+
+bash
+Copy
+Edit
+git config --global user.name "Your Full Name"
+git config --global user.email "your_email@example.com"
+✅ Confirmation:
+After pushing, go to your GitHub repo URL, and you should see the file1.txt there!
+
+📌 Quick Summary of Commands on Ubuntu:
+bash
+Copy
+Edit
+sudo apt install git
+git --version
+mkdir Part-c
+cd Part-c
+nano file1.txt
+git init
+git add .
+git status
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/yourrepo.git
+git branch -M main
+git push -u origin main
 
 
 
