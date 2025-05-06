@@ -122,8 +122,156 @@ if u did not see anuy problem then server will start
 
 
 
+✅ Steps to Run Your Angular Project on Ubuntu
+Step 1: Open Terminal and Navigate to Project Folder
+If your project is created at:
+
+bash
+Copy
+Edit
+~/Desktop/prac12345/part
+Then open terminal and run:
+
+bash
+Copy
+Edit
+cd ~/Desktop/prac12345/part
+Step 2: Open Project in VS Code
+bash
+Copy
+Edit
+code .
+If this opens VS Code with your project, continue. If code command is not found, run this one time:
+
+bash
+Copy
+Edit
+sudo snap install code --classic
+Then run code . again.
+
+Step 3: Check Node and Angular CLI Versions
+In the terminal:
+
+bash
+Copy
+Edit
+node -v
+npm -v
+ng version
+Ensure Node.js and Angular CLI are installed correctly. If ng not found, install Angular CLI:
+
+bash
+Copy
+Edit
+sudo npm install -g @angular/cli
 
 
+
+
+
+
+
+
+
+✅ 2. Open Files Using gedit
+You can open and edit each file using gedit like this:
+
+🟩 Open app.component.ts
+bash
+Copy
+Edit
+gedit src/app/app.component.ts &
+Paste this code into the file:
+
+ts
+Copy
+Edit
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']   // ✅ NOTE: styleUrls (plural)
+})
+export class AppComponent {
+  title = "Registration Form";
+
+  displayname = '';
+  displayaddress = '';
+  displaycontact = '';
+  displayemail = '';
+
+  getValue(name: string, address: string, contact: string, email: string) {
+    this.displayname = name;
+    this.displayaddress = address;
+    this.displaycontact = contact;
+    this.displayemail = email;
+  }
+}
+🟩 Open app.component.html
+bash
+Copy
+Edit
+gedit src/app/app.component.html &
+Paste this code:
+
+html
+Copy
+Edit
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter your name" name="Name"><br>
+<input type="text" #address placeholder="Enter your address" name="address"><br>
+<input type="text" #contact placeholder="Enter your contact" name="contact"><br>
+<input type="email" #email placeholder="Enter your email" name="email"><br>
+<input type="password" #password placeholder="Enter your password" name="password"><br>
+
+<button (click)="getValue(name.value, address.value, contact.value, email.value)">Register</button>
+
+<h1>Your registered data</h1>
+<p>Name: {{displayname}}</p>
+<p>Address: {{displayaddress}}</p>
+<p>Contact: {{displaycontact}}</p>
+<p>Email: {{displayemail}}</p>
+🟩 Open app.component.css
+bash
+Copy
+Edit
+gedit src/app/app.component.css &
+Paste this code:
+
+css
+Copy
+Edit
+input {
+  width: 400px;
+  height: 25px;
+  margin: 10px;
+  padding: 5px;
+}
+✅ 3. Save and Close All Files
+Press Ctrl + S to save each file in gedit, then close them.
+
+✅ 4. Install Required Node Modules
+In your terminal:
+
+bash
+Copy
+Edit
+npm install
+✅ 5. Start Angular Development Server
+bash
+Copy
+Edit
+ng serve
+✅ 6. Open in Browser
+Visit:
+
+arduino
+Copy
+Edit
+http://localhost:4200
+You should see your Registration Form working!
 
 
 
