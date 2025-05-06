@@ -122,7 +122,7 @@
 
 
 
-2)open loginregister.html
+2)open login_register.html
 
 
 <!DOCTYPE html>
@@ -225,6 +225,16 @@
 
 
 
+steps to run on ubuntu
+
+1)mkdir mypractical8
+cd mypractical8
+
+2)gedit index.html
+
+3)gedit register.html
+
+4)python3 -m http.server 8000
 
 
 
