@@ -83,3 +83,106 @@ git config --global user.name "your GitHub user name"
 
 then rrest 
 git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dityagawas@adityagawas-VirtualBox:~$ git --version
+git version 2.45.2
+adityagawas@adityagawas-VirtualBox:~$ mkdir mypractical3
+adityagawas@adityagawas-VirtualBox:~$ cd mypractical3
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ gedit file1.txt
+
+(gedit:6085): libgedit-gtksourceview-WARNING **: 10:42:56.128: could not load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': missing 'version' attribute
+
+(gedit:6085): libgedit-gtksourceview-WARNING **: 10:42:56.129: could not load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru.xml': missing 'version' attribute
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/adityagawas/mypractical3/.git/
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git add .
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   file1.txt
+
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git commmit -m "Initial commit"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git commit -m "Initial commit with file1.txt
+> ^C
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git commit -m "Initioal"
+[master (root-commit) 31d85a5] Initioal
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file1.txt
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git remote add origin https://github.com/adityagws45/wad1.git
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git branch -M main
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git push -u origin main
+Username for 'https://github.com': adityagws45
+Password for 'https://adityagws45@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/adityagws45/wad1.git/'
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git config --global credential.helper store
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ git push -u origin main
+Username for 'https://github.com': adityagws45
+Password for 'https://adityagws45@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/adityagws45/wad1.git/'
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ ^C
+adityagawas@adityagawas-VirtualBox:~/mypractical3$ 
+
