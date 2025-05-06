@@ -25,3 +25,198 @@ inside public create index.html
 and paste the code of prac 1
 
 5)nodemon index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🛠️ Objective:
+To create a Node.js application that serves a static website using Express.js.
+
+✅ Step 1: Install Prerequisites
+A. Open Terminal and install Node.js and npm
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install nodejs npm
+B. Check versions to confirm installation:
+bash
+Copy
+Edit
+node -v
+npm -v
+You should see version numbers like:
+
+Copy
+Edit
+v18.x.x
+9.x.x
+✅ Step 2: Create Your Project Folder
+bash
+Copy
+Edit
+mkdir wad-static-site
+cd wad-static-site
+This folder will hold your project files.
+
+✅ Step 3: Initialize Node Project
+Run the following command to create package.json:
+
+bash
+Copy
+Edit
+npm init
+When prompted:
+
+name: press Enter
+
+version: press Enter
+
+description: type:
+
+kotlin
+Copy
+Edit
+this is wad
+press Enter for all remaining options
+
+type yes at the end to confirm
+
+After this, a package.json file will be created.
+
+✅ Step 4: Create index.js File
+Run:
+
+bash
+Copy
+Edit
+touch index.js
+Now open it in a text editor (like nano or VS Code or gedit ). Example using nano:
+
+bash
+Copy
+Edit
+nano index.js
+Paste this code:
+
+js
+Copy
+Edit
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+
+app.listen(4000, () => {
+    console.log("server is started");
+});
+Press Ctrl + O to save, then Ctrl + X to exit nano.
+
+✅ Step 5: Install Express.js
+Install Express.js (web framework for Node.js):
+
+bash
+Copy
+Edit
+npm install express --save
+This will create the node_modules folder and update package.json with Express as a dependency.
+
+✅ Step 6: Create Static Website (HTML)
+A. Create a folder named public
+bash
+Copy
+Edit
+mkdir public
+B. Create index.html inside public folder
+bash
+Copy
+Edit
+nano public/index.html
+Paste your HTML code (sample below for testing):
+
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WAD Static Site</title>
+</head>
+<body>
+    <h1>Welcome to WAD Static Website</h1>
+    <p>This is a simple Node.js + Express app serving static content.</p>
+</body>
+</html>
+Press Ctrl + O then Ctrl + X to save and exit.
+
+✅ Step 7: Install nodemon (Optional but Recommended)
+Nodemon helps automatically restart your server when files change.
+
+bash
+Copy
+Edit
+sudo npm install -g nodemon
+Check if installed:
+
+bash
+Copy
+Edit
+nodemon -v
+✅ Step 8: Run the Server
+Now run your server using nodemon:
+
+bash
+Copy
+Edit
+nodemon index.js
+If you don’t have nodemon, you can run:
+
+bash
+Copy
+Edit
+node index.js
+You should see this message:
+
+pgsql
+Copy
+Edit
+server is started
+✅ Step 9: Open in Browser
+Open your browser and go to:
+
+arduino
+Copy
+Edit
+http://localhost:4000
+🎉 You should see your static HTML page rendered.
+
+🧪 Optional: Test if Static Files Work
+Try adding an image or CSS file to the public folder and link it in your index.html. They will be served automatically.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
