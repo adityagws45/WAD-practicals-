@@ -315,3 +315,45 @@ fatal: Authentication failed for 'https://github.com/adityagws45/wad1.git/'
 adityagawas@adityagawas-VirtualBox:~/mypractical3$ ^C
 adityagawas@adityagawas-VirtualBox:~/mypractical3$ 
 
+
+
+
+
+
+
+✅ Fix for: fatal: Authentication failed
+🔑 You need to use a Personal Access Token (PAT)
+🔁 Steps to Generate a Personal Access Token (PAT)
+Go to GitHub:
+👉 https://github.com
+
+Click your profile icon → Settings
+
+On the left sidebar, click Developer settings
+
+Click Personal access tokens → Tokens (classic)
+
+Click Generate new token → Generate new token (classic)
+
+Fill the form:
+
+Note: Something like "Ubuntu Git Push"
+
+Expiration: Choose 30 days or 90 days
+
+Scopes: ✅ Select these:
+
+repo (for full control of private/public repositories)
+
+Click Generate token
+
+Copy the token and save it somewhere safe — you won’t be able to see it again!
+
+
+
+
+
+do again git push -u origin main
+then enter username 
+then enter the copied token
+
