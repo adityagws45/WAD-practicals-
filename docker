@@ -1,0 +1,163 @@
+ Step-by-Step Guide to Run Docker App on Ubuntu
+📦 Step 1: Install Docker on Ubuntu
+Open the terminal and run:
+
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install docker.io -y
+Enable and start Docker:
+
+bash
+Copy
+Edit
+sudo systemctl enable docker
+sudo systemctl start docker
+Check Docker version:
+
+bash
+Copy
+Edit
+docker --version
+You should see something like:
+
+nginx
+Copy
+Edit
+Docker version 24.x.x, build xxxxx
+🗂️ Step 2: Prepare Your Project Files
+Make a directory for your app:
+
+bash
+Copy
+Edit
+mkdir my-docker-app
+cd my-docker-app
+
+
+
+
+
+
+ Step 3: Create the Required Files
+Inside the my-docker-app directory, you need to create three files:
+
+app.js – A simple Node.js script
+
+package.json – Contains metadata and dependencies
+
+Dockerfile – Instructions for building the Docker image
+
+You can use nano, vim, or any editor. Let's go step by step.
+
+📄 3.1 Create app.js
+This file will simply print a message.
+
+bash
+Copy
+Edit
+nano app.js
+Paste this content inside:
+
+javascript
+Copy
+Edit
+console.log("Hello from Docker!");
+Press CTRL + O → Enter to save, then CTRL + X to exit.
+
+📄 3.2 Create package.json
+bash
+Copy
+Edit
+nano package.json
+Paste the following:
+
+json
+Copy
+Edit
+{
+  "name": "docker-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+Save and exit (CTRL + O, Enter, then CTRL + X).
+
+📄 3.3 Create Dockerfile (no extension)
+bash
+Copy
+Edit
+nano Dockerfile
+Paste this:
+
+Dockerfile
+Copy
+Edit
+# Use Node.js base image
+FROM node:18
+
+# Set working directory
+WORKDIR /app
+
+# Copy files
+COPY . .
+
+# Install dependencies (none in this case, but good practice)
+RUN npm install
+
+# Command to run the app
+CMD ["npm", "start"]
+Save and exit.
+
+✅ Step 4: Build the Docker Image
+Before this step, make sure Docker is installed and running:
+
+bash
+Copy
+Edit
+docker --version
+If Docker is working, build your image:
+
+bash
+Copy
+Edit
+docker build -t my-node-app .
+This will:
+
+Download the Node.js base image
+
+Copy your project into the image
+
+Install dependencies (none in this case)
+
+Tag the image as my-node-app
+
+▶️ Step 5: Run the Docker Container
+Now run your container:
+
+bash
+Copy
+Edit
+docker run my-node-app
+✅ Output:
+
+csharp
+Copy
+Edit
+Hello from Docker!
+🛠️ Step 6: View and Clean Up Containers
+To list all containers (even stopped ones):
+
+bash
+Copy
+Edit
+docker ps -a
+To remove the container (replace <container_id> with actual ID):
+
+bash
+Copy
+Edit
+docker rm <container_id>
